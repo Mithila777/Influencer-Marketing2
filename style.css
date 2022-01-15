@@ -1,0 +1,332 @@
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    
+}
+header{
+    background-color: #f7f7f7;
+    width: 100%;
+}
+h1{
+    font-size: 45px;
+}
+p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav{
+     height: 140px;
+     width:80%;
+    margin: 0 10%;
+     align-items: center;
+     display: flex;
+   
+   
+}
+nav ul{
+    
+    display: flex;
+    list-style: none;
+    margin-left: 30%;
+}
+
+
+nav ul li a{
+   
+    padding: 10px 16px;
+    font-weight: bold;
+    color:black;
+    text-decoration: none;
+
+}
+.navbar{
+    display: none;
+}
+/* section1 */
+
+.section1{
+    width:80%;
+    margin: 0 10%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    
+}
+@keyframes ex1 {
+    50%{color: red;}
+    100%{color: black;}
+
+}
+
+
+/* The element to apply the animation to */
+#a1 {
+   
+    animation-name: ex1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    color:red;
+
+} 
+
+
+
+/* The element to apply the animation to */
+
+
+
+
+
+.aboutinflucencer  a1{
+   
+    animation-name: ex1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+    color:black;
+}
+button{
+    background-color: black;
+    color:white;
+    border: none;
+    padding: 8px;
+    box-shadow: 4px 4px 2px 1px rgba(0,0,0, .5)  ;
+}
+
+.camara img{
+    width:200px;
+    height:200px;
+
+}
+
+  /* section2 */
+
+.brandlogo{
+    
+    width:80%;
+    margin: 100px 10%;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 0;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    border-top: 4px solid #f7f7f7; 
+    border-bottom: 4px solid #f7f7f7; 
+
+}
+/* section3 */
+.popularproducts{
+    width:80%;
+    margin: 0 10%;
+}
+.popularproducts #pp{
+    text-align: center;
+}
+ .products{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     column-gap: 20px;
+     row-gap: 20px;
+
+     height: (100vh-10px);
+
+ }
+ .product{
+     box-shadow: 10px 10px 40px gray;
+     border-radius: 5px;
+     padding: 15px;
+ }
+ .product img{
+     width:100%;
+     height:200px;
+ }
+ .products span {color:gold;
+
+ }
+.product p{
+    color:gray;
+}
+ .seemore p{
+     margin-right: 15%;
+    float: right;
+}
+
+
+/* section4 */
+
+.deal{
+    width:100%;
+    height: 440px;
+    background-color: #f7f7f7;
+    display: grid;
+grid-template-columns: 1fr 1fr;  
+position: relative;  
+}
+.deal .offer .box{
+    width:60%;
+     border: 2px solid black;
+     margin: 10% 20%  10% 10%;
+     text-align:center;
+}
+#sale{
+    color:red;
+}
+.deal img{
+    height:80%;
+
+
+}
+.deal button{
+    margin:0 30%;
+}
+
+/* footer*/
+
+footer{
+    margin-top: 100px;
+    width:100%;
+    background-color: black;
+    color:white;
+    height:200px;
+    text-align: center;
+    padding: 20px;
+}
+footer a{
+    width:80px;
+    height: 80px;
+    margin: 5px;
+    color:white;
+}
+            /* Tablet */
+
+    @media(max-width:1060px) {
+    .section1{
+        width:90%;
+        margin: 0 5%;
+        display:grid;
+        grid-template-columns:1fr;
+
+        column-gap: 0px;
+        
+    }
+    
+    nav ul li{
+   
+        display: none;
+    
+    }
+    .navbar{
+        display: flex;
+    }
+    .brandlogo{
+    
+        width:90%;
+        margin: 80px 5%;
+        display:grid; 
+      grid-template-columns:repeat(3,1fr)
+
+    }
+    .popularproducts{
+        width:90%;
+        margin: 0 5%;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+   
+        height: (100vh-10px);
+   
+    }
+  .deal{
+      height: 380px;
+  }
+    
+    .deal .offer .box{
+        width:80%;
+         border: 2px solid black;
+         margin: 10% 0%  10% 10%;
+         text-align:center;
+    }
+
+    .deal img{
+        height:80%;
+        width: 80%;
+    
+    
+    }
+   
+    
+}
+
+
+@media(max-width:767px) {
+.section1{
+        width:90%;
+        margin: 0 5%;
+        display:grid;
+      
+        column-gap: 20px;
+        
+    }
+    
+    nav ul li{
+   
+        display: none;
+    
+    }
+    .navbar{
+        display: flex;
+    }
+    .brandlogo{
+    
+        width:80%;
+        margin: 80px 10%;
+        display:grid; 
+      grid-template-columns:repeat(3,1fr)
+
+
+    }
+    .brandlogo img{
+        width:30px ;
+        height: 30px;
+    }
+    .popularproducts{
+        width:90%;
+        margin: 0 5%;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+   
+        height: (100vh-10px);
+   
+    }
+  .deal{
+      height: 320px;
+  }
+    
+    .deal .offer .box{
+        width:80%;
+         border: 2px solid black;
+         margin: 10% 5%  10% 10%;
+         text-align:center;
+    }
+    .deal h1{
+        font-size: 30px;
+    }
+    .deal img{
+        height:80%;
+        width: 80%;
+    
+    
+    }
+   
+    
+    
+}
